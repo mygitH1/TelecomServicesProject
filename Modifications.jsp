@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Telecom Services (Modifications)</TITLE></HEAD>
+<BODY bgColor=#006699 text=#000000>
+<FORM action="UpdateConnControler1" method=post>
+<TABLE align=center border=0 cellPadding=0 cellSpacing=0 width="90%">
+  <TBODY>
+  <TR>
+    <TD><IMG alt="" height=72 src="images/topleft.gif" width=10></TD>
+    <TD bgColor=#ffffff vAlign=bottom width="100%">
+      <TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD align="center" valign="middle">
+            <H1>
+            <MARQUEE>
+                    <font size="5">Telecom Services</font> 
+                    </MARQUEE>
+            </H1>
+            <H1></H1></TD></TR>
+        <TR>
+          <TD>
+            <TABLE border=0 cellPadding=0 cellSpacing=0>
+              <TBODY>
+              <TR>
+                <TD><IMG alt="" height=30 
+                  src="images/buttonleft.gif" width=9></TD>
+                        <TD width=50 align="center" 
+                vAlign=center background=images/buttonmiddle.gif class=tabs><font color="#FFFFFF"><A class=tabs 
+                  href="Home.html"><font color="#FFFFFF">Home</font></A></font></TD>
+                <TD align="center" vAlign=center><IMG alt="" height=30 
+                  src="images/buttonright.gif" width=10></TD>
+                <TD align="center" vAlign=center><IMG alt="" height=30 
+                  src="images/buttonleft.gif" width=9></TD>
+                        <TD width=100 align="center" 
+                vAlign=center background=images/buttonmiddle.gif class=tabs><font color="#FFFFFF"><A class=tabs 
+                  href="Applications.html"><font color="#FFFFFF">Applications</font></A></font></TD>
+                <TD align="center" vAlign=center><IMG alt="" height=30 
+                  src="images/buttonright.gif" width=10></TD>
+                <TD align="center" vAlign=center><IMG alt="" height=30 
+                  src="images/buttonleft.gif" width=9></TD>
+                        <TD width=110 align="center" 
+                vAlign=center background=images/buttonmiddle.gif class=tabs><A class=tabs 
+                  href="Entries.html"><font color="#FFFFFF">Entries</font></A></TD>
+                <TD align="center" vAlign=center><IMG alt="" height=30 
+                  src="images/buttonright.gif" width=10></TD>
+                <TD align="center" vAlign=center><IMG alt="" height=30 
+                  src="images/buttonleft.gif" width=9></TD>
+                        <TD width=110 align="center" 
+                vAlign=center background=images/buttonmiddle.gif class=tabs><A class=tabs 
+                  href="Enquiries.html"><font color="#FFFFFF">Enquiries</font></A></TD>
+                <TD align="center" vAlign=center><IMG alt="" height=30 
+                  src="images/buttonright.gif" width=10></TD>
+                <TD align="center" vAlign=center><IMG alt="" height=30 
+                  src="images/buttonleft.gif" width=9></TD>
+                        <TD width=100 align="center" 
+                vAlign=center background=images/buttonmiddle.gif class=tabs><A class=tabs 
+                  href="Complaints.html"><font color="#FFFFFF">Complaints</font></A></TD>
+                <TD align="center" vAlign=center><IMG alt="" height=30 
+                  src="images/buttonright.gif" width=10></TD>
+                <TD align="center" vAlign=center><IMG alt="" height=30 
+                  src="images/buttonleft.gif" width=9></TD>
+                        <TD width=100 align="center" 
+                vAlign=center background=images/buttonmiddle.gif class=tabs><A class=tabs 
+                  href="AboutUS.html"><font color="#FFFFFF">About 
+                          US </font></A></TD>
+                <TD><IMG alt="" height=30 
+                  src="images/buttonright.gif" width=10></TD>
+                <TD>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+    <TD><IMG alt="" height=71 src="images/topright.gif" 
+  width=9></TD></TR>
+  <TR>
+    <TD width=10><IMG alt="" height=25 src="images/toplcorner.gif" 
+      width=10></TD>
+    <TD background=images/topmiddle.gif width="100%">&nbsp;</TD>
+    <TD width=9><IMG alt="" height=25 src="images/toprcorner.gif" 
+      width=9></TD></TR>
+  <TR>
+    <TD bgColor=#ffffff width=10>&nbsp;</TD>
+    <TD bgColor=#ffffff vAlign=top width="100%">
+      <TABLE border=0 cellPadding=0 cellSpacing=5 width="100%">
+        <TBODY>
+        <TR>
+                <TD vAlign=top> <div align="center">
+                    <table width="100%" height="10" border="1" cellpadding="0" cellspacing="0">
+                      <tr> 
+                        
+                      <td> <div align="center"><strong>Application Modifications</strong></div></td>
+                      </tr>
+                    </table>
+                    
+                  <table width="100%" height="186" border="0">
+                    <tr> 
+                      <td align="center" valign="top"><table width="100%" border="0">
+                          <tr> 
+                            <td colspan="2"><div align="center"><strong>Enter 
+                                the Modification details</strong></div></td>
+                          </tr>
+                          <tr> 
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td>ID</td>
+                            <td><%=request.getAttribute("id") %>
+                              <input name="id" type="hidden" id="id" value="<%=request.getAttribute("id") %>"></td>
+                          </tr>
+                          <tr> 
+                            <td>Name</td>
+                            <td><%=request.getAttribute("name") %> <input name="name" type="hidden" value="<%=request.getAttribute("name") %>"> 
+                              &nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td>Phone No</td>
+                            <td><%=request.getAttribute("phoneno") %> <input name="phoneno" type="hidden" id="phoneno" value="<%=request.getAttribute("phoneno") %>"></td>
+                          </tr>
+                          <tr> 
+                            <td>Purpose</td>
+                            <td><select name="purpose" id="purpose">
+                                <option value="0" selected>---- Select Purpose 
+                                ----</option>
+                                <option value="1">Residence</option>
+                                <option value="2">Business</option>
+                                <option value="3">Office</option>
+                              </select></td>
+                          </tr>
+                          <tr> 
+                            <td>Facility</td>
+                            <td><select name="facility" size="3" multiple id="facility">
+                                <option value="1">Local</option>
+                                <option value="2">STD</option>
+                                <option value="3">ISD</option>
+                              </select></td>
+                          </tr>
+                          <tr> 
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2"><div align="center"> 
+                                <input type="submit" name="Submit" value="Submit">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                <input name="reset" type="reset" id="reset" value="Reset">
+                              </div></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table>                    
+                  </TD>
+              </TR></TBODY></TABLE></TD>
+    <TD bgColor=#ffffff width=9>&nbsp;</TD></TR>
+  <TR>
+    <TD bgColor=#ffffff width=10><IMG alt="" height=30 
+      src="images/transparent.gif" width=10></TD>
+    <TD bgColor=#ffffff vAlign=top width="100%">
+      <HR>
+          <P align=center><font color="#0000FF">Home</font><IMG alt="" 
+      height=15 src="images/bullet.gif" width=15> 
+            <A class=tabs 
+                  href="Applications.html">Applications</A> <IMG alt="" height=15 
+      src="images/bullet.gif" width=15> 
+            <A class=tabs 
+                  href="Entries.html">Entries</A> <IMG alt="" height=15 
+      src="images/bullet.gif" width=15> 
+            <A class=tabs 
+                  href="Enquiries.html">Enquiries</A> <IMG alt="" height=15 
+      src="images/bullet.gif" width=15> 
+            <A class=tabs 
+                  href="Complaints.html">Complaints</A> <IMG alt="" height=15 
+      src="images/bullet.gif" width=15> 
+            <A class=tabs 
+                  href="AboutUS.html">About US</A><BR>
+            <BR>
+          </P></TD>
+    <TD bgColor=#ffffff width=9>&nbsp;</TD></TR>
+  <TR>
+    <TD width=10><IMG alt="" height=19 src="images/bottomleft.gif" 
+      width=10></TD>
+    <TD background=images/bottommiddle.gif width="100%">&nbsp;</TD>
+    <TD width=9><IMG alt="" height=19 src="images/bottomright.gif" 
+      width=9></TD></TR></TBODY></TABLE></FORM></BODY><!-- #EndTemplate --></HTML>

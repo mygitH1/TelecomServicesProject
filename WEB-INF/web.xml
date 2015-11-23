@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+    <servlet>
+        <servlet-name>com.telecom.NewPhoneConnControler</servlet-name>
+        <servlet-class>com.telecom.NewPhoneConnControler</servlet-class>
+    </servlet>
+
+	<servlet>
+        <servlet-name>com.telecom.PhoneTransferControler</servlet-name>
+        <servlet-class>com.telecom.PhoneTransferControler</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>com.telecom.TempPhoneConnControler</servlet-name>
+        <servlet-class>com.telecom.TempPhoneConnControler</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>com.telecom.UpdateConnControler</servlet-name>
+        <servlet-class>com.telecom.UpdateConnControler</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>com.telecom.UpdateConnControler1</servlet-name>
+        <servlet-class>com.telecom.UpdateConnControler1</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>com.telecom.CancellationControler</servlet-name>
+        <servlet-class>com.telecom.CancellationControler</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>com.telecom.ComplaintsControler</servlet-name>
+        <servlet-class>com.telecom.ComplaintsControler</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>com.telecom.EnquiryByTelephoneNoControler</servlet-name>
+        <servlet-class>com.telecom.EnquiryByTelephoneNoControler</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>com.telecom.EnquiryForNewConnectionControler</servlet-name>
+        <servlet-class>com.telecom.EnquiryForNewConnectionControler</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>com.telecom.EnquiryForPhoneTransferControler</servlet-name>
+        <servlet-class>com.telecom.EnquiryForPhoneTransferControler</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>com.telecom.EnquiryForTempPhoneConnectionControler</servlet-name>
+        <servlet-class>com.telecom.EnquiryForTempPhoneConnectionControler</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>com.telecom.ChangedNumbersEnquiryControler</servlet-name>
+        <servlet-class>com.telecom.ChangedNumbersEnquiryControler</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>com.telecom.BillEnquiryControler</servlet-name>
+        <servlet-class>com.telecom.BillEnquiryControler</servlet-class>
+    </servlet>
+	<servlet>
+        <servlet-name>com.telecom.ChangedNumberEntryControler</servlet-name>
+        <servlet-class>com.telecom.ChangedNumberEntryControler</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>com.telecom.ChangedNumberEntryControler</servlet-name>
+        <url-pattern>/ChangedNumberEntryControler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>com.telecom.BillEnquiryControler</servlet-name>
+        <url-pattern>/BillEnquiryControler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>com.telecom.ChangedNumbersEnquiryControler</servlet-name>
+        <url-pattern>/ChangedNumbersEnquiryControler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>com.telecom.EnquiryForTempPhoneConnectionControler</servlet-name>
+        <url-pattern>/EnquiryForTempPhoneConnectionControler</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+        <servlet-name>com.telecom.EnquiryForPhoneTransferControler</servlet-name>
+        <url-pattern>/EnquiryForPhoneTransferControler</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+        <servlet-name>com.telecom.EnquiryForNewConnectionControler</servlet-name>
+        <url-pattern>/EnquiryForNewConnectionControler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>com.telecom.EnquiryByTelephoneNoControler</servlet-name>
+        <url-pattern>/EnquiryByTelephoneNoControler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>com.telecom.ComplaintsControler</servlet-name>
+        <url-pattern>/ComplaintsControler</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+        <servlet-name>com.telecom.CancellationControler</servlet-name>
+        <url-pattern>/CancellationControler</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+        <servlet-name>com.telecom.UpdateConnControler</servlet-name>
+        <url-pattern>/UpdateConnControler</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+        <servlet-name>com.telecom.UpdateConnControler1</servlet-name>
+        <url-pattern>/UpdateConnControler1</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+        <servlet-name>com.telecom.TempPhoneConnControler</servlet-name>
+        <url-pattern>/TempPhoneConnControler</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>com.telecom.PhoneTransferControler</servlet-name>
+        <url-pattern>/PhoneTransferControler</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>com.telecom.NewPhoneConnControler</servlet-name>
+        <url-pattern>/NewPhoneConnControler</url-pattern>
+    </servlet-mapping>
+</web-app>

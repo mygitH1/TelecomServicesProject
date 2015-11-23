@@ -1,0 +1,33 @@
+.tabs {
+	COLOR: #ffffff; FONT-WEIGHT: bold; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; TEXT-ALIGN: center
+}
+A.tabs:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.tabs:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.tabs:hover {
+	COLOR: #cccccc; TEXT-DECORATION: none
+}
+TD {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 13px
+}
+HR {
+	COLOR: #003399; HEIGHT: 1px
+}
+H1 {
+	COLOR: #003399; FONT-SIZE: 20px; FONT-WEIGHT: normal
+}
+H2 {
+	COLOR: #0066cc; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+A:link {
+	COLOR: #0033cc; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #0033cc; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #0099ff; TEXT-DECORATION: none
+}

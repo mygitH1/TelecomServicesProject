@@ -1,0 +1,174 @@
+
+
+
+create table new_connections_details(
+req_id number,
+name varchar2(40),
+password varchar2(30),
+gender number(1),
+address varchar2(150),
+purpose number(1),
+facility number(3),
+bank_details_id number,
+confirmed varchar2(1));
+
+
+
+
+insert into new_connections_details values(1,'sa','sa',1,'hyd',1,1,100,1);
+
+
+insert into new_connections_details values(1,'sairam','sairam',1,'hyd',1,1,100,1);
+
+
+insert into new_connections_details values(1,'sai','sai',1,'hyd',1,1,100,1);
+
+
+
+
+create table temp_connections_details(
+req_id number,
+name varchar2(40),
+password varchar2(30),
+gender number(1),
+address varchar2(150),
+purpose number(1),
+facility number(3),
+bank_details_id number,
+confirmed varchar2(1),
+from_date varchar2(10),
+to_date varchar2(10)
+);
+
+
+
+
+insert into temp_connections_details values(1,'chinni','chinni',1,'hyd',1,1,100,1,'23-mar-05','04-apr-05');
+
+
+insert into temp_connections_details values(1,'chinna','chinna',1,'hyd',1,1,100,1,'23-mar-05','04-apr-05');
+
+
+insert into temp_connections_details values(1,'chin','chin',1,'hyd',1,1,100,1,'23-mar-05','04-apr-05');
+
+
+
+
+create table demand_draft_details(
+dd_id number,
+name varchar2(30),
+branch varchar2(30),
+dd_date varchar2(10),
+amount number(7,2),
+draft_no varchar2(30));
+
+
+insert into demand_draft_details values(1,'sbi','hyd','23-mar-05',9000,1);
+
+insert into demand_draft_details values(2,'sbi','hyd','23-mar-05',9000,2);
+
+insert into demand_draft_details values(3,'sbi','hyd','23-mar-05',9000,3);
+
+
+
+create table purpose_details(
+purpose_id number(1),
+name varchar2(10));
+
+insert into purpose_details values(1,'sairam');
+
+insert into purpose_details values(1,'sai');
+
+insert into purpose_details values(1,'chinna');
+
+
+create table phone_transfer_request(
+req_id number,
+phone_no number,
+name varchar2(40),
+present_address varchar2(150),
+new_address varchar2(150),
+bank_details_id number,
+status varchar2(100));
+
+insert into phone_transfer_request values(1,1234,'sairam','snpuram','balakampet',100,'working');
+
+insert into phone_transfer_request values(1,123,'sai','snpuram','balakampet',100,'working');
+
+insert into phone_transfer_request values(1,12,'chinna','snpuram','balakampet',100,'working');
+
+
+create table phone_cancellation(
+cancle_id number,
+req_id number,
+phone_no number);
+
+insert into phone_cancellation values(1,1,1234);
+
+insert into phone_cancellation values(2,1,123);
+
+insert into phone_cancellation values(3,1,12);
+
+
+create table complaints(
+comlaint_id number,
+subject varchar2(40),
+phone_no number,
+client_name varchar2(40),
+message varchar2(150));
+
+insert into complaints values(1,'cancellation','1234','sairam','cancel');
+
+insert into complaints values(1,'shifting','123','sai','shift');
+
+insert into complaints values(1,'std','12','sairam','connection of std');
+
+
+create table telephone_details(
+telephone_no number,
+req_id number);
+
+
+insert into telephone_details values(12343567,1);
+
+insert into telephone_details values(1234,2);
+
+insert into telephone_details values(456,1);
+
+insert into telephone_details values(111,2);
+
+create table changedNumbers(
+old_no number,
+new_no number);
+
+insert into changedNumbers values(1234567,21234567);
+
+insert into changedNumbers values(123,212);
+
+insert into changedNumbers values(456,2127);
+
+
+
+create table billdetails(
+phone_no number,
+bill_no number,
+amount number(13,2));
+
+
+insert into billdetails values(1234567,1289345,10932.00);
+
+
+insert into billdetails values(123,128,1932.00);
+
+
+insert into billdetails values(456,222,10032.00);
+
+
+insert into billdetails values(2345678,100,15005.00);
+
+
+insert into billdetails values(3456789,101,2000.00);
+
+
+insert into billdetails values(4567890,102,750.00);
+
